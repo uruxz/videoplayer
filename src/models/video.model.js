@@ -1,5 +1,9 @@
 import mongoose, {Schema} from "mongoose";
 import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
+import { JsonWebTokenError } from "jsonwebtoken";
+import bcrypt from bcrypt;
+
+
 
 const videoSchema = new Schema(
     {
