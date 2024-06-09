@@ -1,6 +1,7 @@
 //making user model
 
 import mongoose, {Schema} from "mongoose";
+import bcrypt from "bcrypt";
 
 const userSchema = new Schema(
     {
@@ -20,7 +21,7 @@ const userSchema = new Schema(
             trim: true
             
         },
-        fullname: {
+        fullName: {
             type: String,
             required: true,
             trim: true,
